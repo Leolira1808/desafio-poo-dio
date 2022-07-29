@@ -57,6 +57,19 @@ public class Main {
         System.out.println("Conteudo Inscrito Isis Regina" + devIsis.getConteudosConcluidos());
         System.out.println("XP:" + devIsis.calcularTotalXp());
 
+        System.out.println("-----------------");
 
+
+        Dev devEmilia = new Dev();
+        devEmilia.setNome("Emilia Lira");
+        devEmilia.inscreverBootcamp(bootCamp);
+        System.out.println("Conteudo Inscrito Emilia Lira" + devEmilia.getConteudosInscricos());
+        devEmilia.progredir();
+        devEmilia.progredir();
+        devEmilia.progredir();
+        System.out.println("-");
+        System.out.println("Conteudo Inscrito Emilia Lira" + devEmilia.getConteudosInscricos());
+        System.out.println("Conteudo Inscrito Emilia Lira" + devEmilia.getConteudosConcluidos());
+        System.out.println("XP:" + devEmilia.calcularTotalXp());
     }
 }
